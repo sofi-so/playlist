@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(IMAGENS/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004D40;
+    padding: 10px;
+}
+
+form{
+    border: 5px solid #2F1F2B;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+form input, form button {
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+
+}
+
+form button{
+    cursor: pointer;
+    background: none;
+    color: black;      
+
+}
+
+form button:hover{
+    background-color: black;
+    color: #BF9A33;
+}
+
+
+#playlist li a{
+    color: #034c65;;
+    text-decoration: none;
+}
+
+#playlist .current-song a{
+    color: black;
+}
+
+img{
+    height: 50px;
+    margin: 50px;
+}
+
+ul li .current-song{
+    color: black;
+}
+
+.conteiner{
+     display: grid;
+     grid-template-columns: auto auto;
+     grid-template-rows: 100px 100px 100px 100px 100px;
+     grid-column-gap: 50px;
+     grid-row-gap: 50px;
+}
+
+.item{
+    background-color: #F48D79;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+    li{
+       list-style: none;
+    }
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
+
+    audio::-webkit-media-controls-panel{
+        background-color: #085141;
+    }
+    audio::-webkit-media-controls-play-button{
+        background-color: #FDA898;
+        border-radius: 50%;
+    }
+    audio::-webkit-media-controls-current-time-display{
+        color: #ffffff;
+    }
+    audio::-webkit-media-controls-time-remaining-display{
+        color: #ffffff;
+    }
+    audio::-webkit-media-controls-timeline{
+        border-radius: 40px;
+        background-color: #ffc0b4;
+    }
+    audio::-webkit-media-controls-volume-slider{
+        background-color: #FDA898;
+        border-radius: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    audio::-webkit-media-controls-mute-button{
+        background-color: #FDA898 ;
+        border-radius: 50%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 10px;
+        align-items: center;
+        color: #202020;
+    }
+    
+    .logo {
+        font-weight: 800;
+        font-size: 25px;
+    }
+    
+    .nav-itens {
+        list-style: none;
+        display: flex;
+    }
+    
+    .nav-itens>li>a {
+        padding-left: 30px;
+        color: #202020;
+        text-decoration:none;
+    }
+    
+    .login {
+        padding: 10px 40px;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        color: #202020;
+        background-color: #F48D79;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        transition: 1s background;
+    }
+    
+    .cadastro {
+        padding: 10px 40px;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        color: black;
+        background-color: #076853;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        transition: 1s background;
+    }
+    
+    .cadastro:hover {
+        background-color: #2a4542;
+        transition: 1s background;
+    }
+
+    .login:hover {
+        background-color: #b87273;
+        transition: 1s background;
+    }
+
+.letra {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    background-color: #F48D79;
+    padding: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 100px;
+   
+   
+}
+    iframe{
+        padding: center;
+    }
+
+    #searchbar{
+        width: 50vw;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+    }
+
+.caixadepesquisa{
+    position: top;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    border-radius: 40px;
+    background-color:white;
+    padding: 10px;
+}
+.botaodepesquisa{
+    color:#076853;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F48D79;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    text-decoration: none;
+}
+.textodepesquisa{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0%;
+    color: #085141;
+    font-size: 15px;
+    transition: 0.6s;
+    line-height: 35px;
+    width: 0px;
+}
+.caixadepesquisa:hover > .textodepesquisa{
+    width: 270px;
+}
